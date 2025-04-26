@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="宋鹏鹏 - 资深AI算法工程师，专注NLP/CV技术研发与工程化实践">
+    <title>宋鹏鹏 | AI算法工程师</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="brand">P.P.SONG</a>
+            <ul class="nav-links">
+                <li><a href="#about"><i class="fas fa-user"></i> 关于</a></li>
+                <li><a href="#experience"><i class="fas fa-briefcase"></i> 经历</a></li>
+                <li><a href="#skills"><i class="fas fa-laptop-code"></i> 技能</a></li>
+                <li><a href="#projects"><i class="fas fa-project-diagram"></i> 项目</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> 联系</a></li>
+            </ul>
+            <div class="theme-switch">
+                <i class="fas fa-moon"></i>
+            </div>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 首屏 -->
+    <section id="hero">
+        <div class="hero-content">
+            <div class="avatar-container">
+                <img src="images/avatar.jpg" alt="宋鹏鹏" class="avatar">
+            </div>
+            <h1 class="typing-effect">宋鹏鹏</h1>
+            <h2>AI算法工程师</h2>
+            <div class="social-buttons">
+                <a href="https://github.com" target="_blank" class="social-btn github">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://linkedin.com" target="_blank" class="social-btn linkedin">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+            </div>
+            <div class="scroll-indicator">
+                <span></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我 -->
+    <section id="about">
+        <div class="section-container">
+            <h2 class="section-title"><span>关于我</span></h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <h3><i class="fas fa-rocket"></i> 技术专长</h3>
+                    <ul class="expertise-list">
+                        <li>自然语言处理（BERT/Transformer）</li>
+                        <li>计算机视觉（OpenMMLab/YOLOv5）</li>
+                        <li>高并发系统架构设计</li>
+                    </ul>
+                </div>
+                <div class="about-card stats-card">
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="4">0</div>
+                        <div class="stat-label">年行业经验</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="12">0</div>
+                        <div class="stat-label">成功项目</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 专业经历 -->
+    <section id="experience">
+        <div class="section-container">
+            <h2 class="section-title"><span>专业经历</span></h2>
+            <div class="timeline">
+                <!-- 字节跳动经历 -->
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h3>字节跳动 - 自然语言处理工程师</h3>
+                        <div class="timeline-period">2021.07 - 至今</div>
+                    </div>
+                    <ul class="achievement-list">
+                        <li>
+                            <i class="fas fa-microchip"></i>
+                            搭建基于BERT的多语言客服意图识别系统，QPS提升至5000+
+                        </li>
+                        <li>
+                            <i class="fas fa-chart-line"></i>
+                            设计增量学习框架使模型周级迭代效率提升40%
+                        </li>
+                    </ul>
+                    <div class="tech-tags">
+                        <span class="tech-tag">PyTorch</span>
+                        <span class="tech-tag">Transformer</span>
+                        <span class="tech-tag">Kubernetes</span>
+                    </div>
+                </div>
+                <!-- 其他经历类似结构 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 技能展示 -->
+    <section id="skills">
+        <div class="section-container">
+            <h2 class="section-title"><span>技术能力</span></h2>
+            <div class="skills-grid">
+                <div class="skill-chart">
+                    <canvas id="radarChart"></canvas>
+                </div>
+                <div class="skill-progress">
+                    <div class="progress-item">
+                        <label>Python开发</label>
+                        <div class="progress-bar" data-percent="95">
+                            <div class="progress-fill"></div>
+                        </div>
+                    </div>
+                    <!-- 其他技能进度条 -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 项目展示 -->
+    <section id="projects">
+        <div class="section-container">
+            <h2 class="section-title"><span>项目展示</span></h2>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">全部</button>
+                <button class="filter-btn" data-filter="nlp">NLP</button>
+                <button class="filter-btn" data-filter="cv">CV</button>
+            </div>
+            <div class="project-grid">
+                <div class="project-card" data-category="nlp">
+                    <div class="project-media">
+                        <img src="images/project1.jpg" alt="金融文档解析系统">
+                    </div>
+                    <div class="project-info">
+                        <h3>智能金融文档解析系统</h3>
+                        <div class="project-meta">
+                            <span class="meta-item">
+                                <i class="fas fa-calendar-alt"></i> 2023
+                            </span>
+                            <span class="meta-item">
+                                <i class="fas fa-star"></i> 创新技术奖
+                            </span>
+                        </div>
+                        <p class="project-desc">基于LayoutLMv3的混合注意力机制解决方案...</p>
+                        <a href="#0" class="project-link">查看详情 <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- 其他项目卡片 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系方式 -->
+    <section id="contact">
+        <div class="section-container">
+            <h2 class="section-title"><span>保持联系</span></h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h4>联系电话</h4>
+                            <p>182-3527-5789</p>
+                        </div>
+                    </div>
+                    <!-- 其他联系信息 -->
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="姓名" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="电子邮箱" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="5" placeholder="留言内容..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">发送消息 <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>导航</h4>
+                <ul class="footer-links">
+                    <li><a href="#about">关于我</a></li>
+                    <li><a href="#projects">项目案例</a></li>
+                    <li><a href="#contact">合作联系</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>技术博客</h4>
+                <ul class="blog-links">
+                    <!-- 建议替换为实际链接 -->
+                    <li><a href="#">模型压缩实践</a></li>
+                    <li><a href="#">Transformer优化</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>社交网络</h4>
+                <div class="social-links">
+                    <!-- 建议替换为实际链接 -->
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2023 宋鹏鹏 保留所有权利 | 京ICP备2023012345号</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
